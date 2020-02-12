@@ -1,0 +1,17 @@
+<div style="overflow: auto;" class="mt-4 container jumbotron">
+    <h2>Upload CSV files</h2>
+
+    <div class="card" style="width: 35rem;">
+        <div class="card-body">
+          <h5 class="card-title">Select a file</h5>
+          <div class="file-upload">
+            <input type="file" name="image" ng2FileSelect [uploader]="uploader"/>
+            <button type="button" class="btn btn-primary" (click)="uploader.uploadAll()" [disabled]="!uploader.getNotUploadedItems().length">
+              Upload
+            </button>
+          </div>
+        </div>
+      </div>
+      
+  
+  </div>
